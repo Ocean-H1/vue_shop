@@ -353,7 +353,7 @@ export default {
       ).catch((err) => err)
 
       if (confirmResult !== 'confirm') {
-        return this.$message.error('取消了删除！')
+        return this.$message.info('取消了删除！')
       }
 
       // 注：此接口返回的data是该角色删除权限后 最新的权限列表
